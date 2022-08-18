@@ -1,0 +1,120 @@
+$switcher-background: #1f1e1e;
+$switcher-button-color: rgb(48, 47, 47);
+$switcher-icon-color: #fff;
+$main-font-color: #fff;
+$menu-item-active-color: #9d9ea0;
+$box-joint: 1px 0 3px #fff;
+
+.theme-switcher {
+    .theme-switcher__base {
+        background-color: $switcher-background;
+        .theme-switcher__button {
+            background-color: $switcher-button-color;
+            border: 6px solid $switcher-background;
+            .theme-switcher__icon {
+                color: $switcher-icon-color;
+                filter: drop-shadow(0 0 6px $switcher-icon-color);
+            }
+        }
+    }
+}
+
+#sun {
+    display: none;
+}
+
+
+
+.header_theme_dark{
+    background-color: #1a3434;
+    color: $main-font-color;
+    box-shadow: $box-joint;
+}
+
+.menu__item{
+    color: $main-font-color;
+    &:hover {
+        color: $menu-item-active-color;
+    }
+}
+.page-block{
+    box-shadow: $box-joint;
+}
+.page-block_theme_darkgreen{
+    background-color: #1a3434;
+}
+
+.page-block_theme_darkbeige{
+    background-color: #433d28;
+}
+
+.line{
+    border-top-color: white;
+}
+
+.block-header__name-block{
+    font-family: Bazar;
+    font-size: calcValues(160, 22, 319);
+    text-shadow: 3px 3px 0px #393a3a;
+    color: #fcfaf7;
+}
+
+.block-header__separator{
+    hr{
+        border-top: 4px solid #fcfaf7;
+    }
+    span {
+    color: #fcfaf7;
+    }
+}
+
+.block-header__description {
+    color: #fcfaf7;
+}
+
+.aboutme-content__text{
+    color: #fcfaf7;
+}
+
+.aboutme-content, .aboutme-content__header-text, .aboutme-content__header-description{
+    color: $main-font-color;
+}
+
+
+.aboutme-content__header-separator{
+    border-top-color: $main-font-color;
+}
+
+.page-block_theme_darkorange{
+    background-color: #4b1f0e;
+}
+
+.filters__text{
+    color: $main-font-color;
+}
+
+.page-block_theme_darkgrey{
+    background-color: #403b36;
+}
+
+.blog_text{
+    color: $main-font-color;
+}
+
+.blog__separator{
+    border-top-color: $main-font-color;
+}
+
+.blog__response{
+    color: $main-font-color;
+}
+
+.additional-blocks__seperator{
+    border-top: 4px solid $main-font-color;
+}
+.additional-blocks__button{
+    color: $main-font-color;
+}
+.page-block_theme_dark-iron{
+    background-color: #161718;
+}

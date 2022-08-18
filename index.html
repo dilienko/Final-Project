@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/ligth-theme.css" id="theme">
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+</head>
+<body>
+    <header class="header header_theme_light header_theme_dark">
+        <div class="header-content">
+            <nav class="menu ">
+                <a href="#aboutme" class="menu__item">ABOUT ME</a>
+                <a href="#portfolio" class="menu__item">PORTFOLIO</a>
+                <div class="menu__image">
+                    <img src="./images/header/header-logo.png" alt="logo">
+                    <span class="menu__logotext">JD</span>
+                </div>
+                <a href="#myblog" class="menu__item">MY BLOG</a>
+                <a href="#contactme" class="menu__item">CONTACT ME</a>
+            </nav>
+        </div>
+        <div class="theme-switcher theme-switcher_position_right">
+            <label class="theme-switcher__base">
+                <input type="checkbox" class="theme-switcher__checkbox" id="switcher">
+                <span class="theme-switcher__button">
+                    <ion-icon name="sunny-outline" id="sun" class="theme-switcher__icon"></ion-icon>
+                    <ion-icon name="moon-outline" id="moon" class="theme-switcher__icon"></ion-icon>
+                </span>
+            </label>
+        </div> 
+        <hr class="line line_position_bottom">
+    </header>
+    
+    <main>
+        <div class="progresbar">
+            <div class="progresbar__value"></div> 
+        </div>
+        <div class="page-block page-block_height_reduced page-block_theme_green page-block_theme_darkgreen">
+            <hr class="line line_position_top">
+            <div class="content-container content-container_hight_reduced">
+                <div class="retro-block-header">
+                    <div class="retro-block-header__text">RETRO</div>
+                    <div class="retro-block-header__pictute">
+                        <img src="./images/retro/header.png" alt="header">
+                        <div>OLD STYLE PORTFOLIO</div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider__image">
+                        <img class="slider__current-image" src="./images/retro/slider1.jpg" alt="KODAK CAMERA"> 
+                        <div class="slider__image-switcher slider__image-switcher_position_right" id="previous-slider-button"><ion-icon name="chevron-back-outline"></ion-icon></div>
+                        <div class="slider__image-switcher slider__image-switcher_position_left" id="next-slider-button"><ion-icon name="chevron-forward-outline"></ion-icon></div>  
+                    </div>
+                    <div class="slider__text">KODAK CAMERA</div> 
+                </div>
+                <div class="retro-block-description">
+                    <div class="retro-block-description__first-line">“HELLO, I AM JOHN DOE</div>
+                    <div class="retro-block-description__second-line">WELCOME TO RETRO, MY WONDERFUL THEME!”</div>
+
+                </div>
+   
+            </div>
+            <hr class="line line_position_bottom">
+        </div>
+        
+
+        <div class="page-block page-block_theme_beige page-block_theme_darkbeige" id="aboutme">
+            <hr class="line line_position_top">
+            <div class="content-container">
+                <div class="block-header">
+                    <div class="block-header__name-block">ABOUT ME</div>
+                    <div class="block-header__separator">
+                        <hr> <span>xxx</span> <hr>
+                    </div>
+                    <div class="block-header__description">I AM A GRAPHIC DESIGNER FROM BALTIMORE</div>
+                </div>
+                <div class="block-content block-content_elem-align_row block-content_elem-align_column">
+                    <div class="aboutme-content">
+                        <div class="aboutme-content__header">
+                            <div class="aboutme-content__header-image">
+                                <img src="./images/aboutme/movies.png" alt="movies">
+                            </div>
+                            <div class="aboutme-content__header-text">MOVIES</div>
+                            <div class="aboutme-content__header-description">WHAT I WATCH</div>
+                            <hr class="aboutme-content__header-separator">
+                        </div>
+                        <div class="aboutme-content__text">
+                            In my opinion, adventure, comedy, and science fiction are the best of all the genres. Adventure movies top the list when it comes to being the best. They are full of action, have good story lines, and keep me on the edge of my seat. Adventure movies are never boring.
+                        </div>
+                    </div>
+
+                    <div class="aboutme-content">
+                        <div class="aboutme-content__header">
+                            <div class="aboutme-content__header-image">
+                                <img src="./images/aboutme/music.png" alt="music">
+                            </div>
+                            <div class="aboutme-content__header-text">MUSIC</div>
+                            <div class="aboutme-content__header-description">WHAT I LISTEN</div>
+                            <hr class="aboutme-content__header-separator">
+                        </div>
+                        <div class="aboutme-content__text">
+                            My favourite style of music is pop music, because it is breathtaking and full of energy. When I listen to pop music it makes me remember happy times and forget the problems of everyday life. It helps me to relax when I'm tired, and entertains me.
+                        </div>
+                    </div>
+
+                    <div class="aboutme-content">
+                        <div class="aboutme-content__header">
+                            <div class="aboutme-content__header-image">
+                                <img src="./images/aboutme/clothes.png" alt="clothes">
+                            </div>
+                            <div class="aboutme-content__header-text">CLOTHES</div>
+                            <div class="aboutme-content__header-description">WHAT I WEAR</div>
+                            <hr class="aboutme-content__header-separator">
+                        </div>
+                        <div class="aboutme-content__text">
+                            I prefer casual clothes - simple and comfortable. A pair of jeans and a shirt would be perfect. I am not really the fashionable type. But of course, I also dress up for special occasions.I dislike wearing untidy and eccentric clothes. I can't stand too tight clothes.
+                        </div>
+                    </div>
+
+                    <div class="aboutme-content">
+                        <div class="aboutme-content__header">
+                            <div class="aboutme-content__header-image">
+                                <img src="./images/aboutme/food.png" alt="food">
+                            </div>
+                            <div class="aboutme-content__header-text">FOOD</div>
+                            <div class="aboutme-content__header-description">WHAT I EAT</div>
+                            <hr class="aboutme-content__header-separator">
+                        </div>
+                        <div class="aboutme-content__text">
+                            I love all kinds of milk products, especially kefir, cottage cheese and cheese. I prefer cheeses from Germany, France or Switzerland. As for sea products I love shrimps, salmon and trout.I like different kinds of salads, dressed with olive oil or sour cream.
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        
+            <hr class="line line_position_bottom">
+        </div>
+
+        <div class="page-block page-block_theme_orange page-block_theme_darkorange" id="portfolio">
+            <hr class="line line_position_top">
+            <div class="content-container">
+                <div class="block-header">
+                    <div class="block-header__name-block">PORTFOLIO</div>
+                    <div class="block-header__separator">
+                        <hr> <span>xxx</span> <hr>
+                    </div>
+                    <div class="block-header__description">SIMPLICITY IS THE ULTIMATE SOPHISTICATION</div>
+                </div>
+                <div class="block-content block-content_align_column block-content_size_bigger">
+                    <div class="filters">
+                        <div class="filters__text">Filter by</div>
+                        <div class="filters__element" id="design">
+                            <div class="filters__element-circle"></div>
+                            <div class="filters__element-text">design</div>
+                        </div>
+                        <div class="filters__element" id="logo">
+                            <div class="filters__element-circle"></div>
+                            <div class="filters__element-text">logo</div>
+                        </div>
+                        <div class="filters__element" id="photography">
+                            <div class="filters__element-circle"></div>
+                            <div class="filters__element-text">photography</div>
+                        </div>
+                        <div class="filters__element" id="poster">
+                            <div class="filters__element-circle"></div>
+                            <div class="filters__element-text">poster</div>
+                        </div>
+                        <div class="filters__element" id="promotion">
+                            <div class="filters__element-circle"></div>
+                            <div class="filters__element-text">promotion</div>
+                        </div>
+                        <div class="filters__element" id="retro">
+                            <div class="filters__element-circle"></div>
+                            <div class="filters__element-text">retro</div>
+                        </div>
+                        <div class="filters__element" id="t-shirts">
+                            <div class="filters__element-circle"></div>
+                            <div class="filters__element-text">t-shirts</div>
+                        </div>
+                        <div class="filters__element" id="videos">
+                            <div class="filters__element-circle"></div>
+                            <div class="filters__element-text">videos</div>
+                        </div>
+                    </div>
+                    <div class="profile-works ">
+                
+                    </div>
+                    <div class="additional-blocks">
+                        <div class="additional-blocks__seperator"><hr></div>
+                        <div class="additional-blocks__button" id="portfolio-button">BROWSE ALL</div>
+                    </div>
+                </div> 
+                
+            </div>
+        
+            <hr class="line line_position_bottom">
+        </div>
+
+
+        <div class="page-block page-block_theme_lightgrey page-block_theme_darkgrey page-block_height_fit-content" id="myblog">
+            <hr class="line line_position_top">
+            <div class="content-container content-container_height_fit-content">
+                <div class="block-header block-header_height_fit-content block-header_margin_bottom-top">
+                    <div class="block-header__name-block">MY BLOG</div>
+                    <div class="block-header__separator">
+                        <hr> <span>xxx</span> <hr>
+                    </div>
+                    <div class="block-header__description">NEWS FROM MY HOUSE</div>
+                </div>
+                <div class="block-content block-content_align_column block-content_height_fit-content">
+                    <div class="blogs-container block-container__hidden-blocks" id="blog-container">
+                        
+                    </div>
+                    <div class="additional-blocks additional-blocks_changed-margin_top-bottom">
+                        <div class="additional-blocks__seperator"><hr></div>
+                        <div class="additional-blocks__button" id="blogs-botton">SHOW ALL POSTS</div>
+                    </div>
+                </div> 
+                
+            </div>
+        
+            <hr class="line line_position_bottom">
+        </div>
+
+
+        <div class="page-block page-block_theme_light-iron page-block_theme_dark-iron" id="contactme">
+            <hr class="line line_position_top">
+            <div class="content-container">
+                <div class="block-header">
+                    <div class="block-header__name-block block-header__name-block_color_white">CONTACT ME</div>
+                    <div class="block-header__separator block-header__separator_color_white">
+                        <hr> <span>xxx</span> <hr>
+                    </div>
+                    <div class="block-header__description block-header__description_color_white">I'LL BE GLAD TO ANSWER YOUR QUESTIONS!</div>
+                </div>
+                <div class="block-content block-content_align_column">
+                    <form class="form" id="contact-form">
+                        <input type="text" id="name" class="form__data" placeholder="Name" required>
+                        <input type="email" name="email" id="email" class="form__data" placeholder="Email address" required>
+                        <input type="text" name="subject" id="subject" class="form__data" placeholder="Subject" required>
+                        <textarea name="message" id="message" class="form__text" placeholder="Your message" required></textarea>
+                        <input type="submit" name="submit" id="submit" class="form__submit" value="Send Message">
+                    </form>
+
+                    <footer class="social-media">
+                        <div class="sm-header">
+                            <div class="sm-header__separator"><hr></div>
+                            <div class="sm-header__text">I AM SOCIAL</div>
+                        </div>
+                        <div class="sm-icons">
+                            <div class="sm-icon__item"><a href="https://twitter.com/" target="_blank"><img src="./images/contactme/twitter.png" alt="twitter-icon"></a></div>
+                            <div class="sm-icon__item"><a href="https://www.facebook.com/" target="_blank"><img src="./images/contactme/facebook.png" alt="facebook-icon"></a></div>
+                            <div class="sm-icon__item"><a href="https://en.wikipedia.org/wiki/Google%2B" target="_blank"><img src="./images/contactme/googleplus.png" alt="google-plus-icon"></a></div>
+                            <div class="sm-icon__item"><a href="https://www.pinterest.com/" target="_blank"><img src="./images/contactme/pinterest.png" alt="pinterest-icon"></a></div>
+                            <div class="sm-icon__item"><a href="https://www.linkedin.com/" target="_blank"><img src="./images/contactme/linkedin.png" alt="linkedin-icon"></a></div>
+                        </div>
+                        <div class="modal" id="modal-error">
+                            <div class="modal-window modal-window_type_error">
+                                <div class="modal-window__content">
+                                    You made mistakes in the form:
+                                    <ul id="error-list"></ul>
+                                
+                                </div>
+                                <input type="button" value="OK" class="modal-window__button" id="modal-error-button">
+                            </div>
+                        </div>
+
+                        <div class="modal" id="modal-success">
+                            <div class="modal-window">
+                                <div class="modal-window__content" id="modal-window_type_success">
+                                    <p id="general-information">Thanks for the feedback. You data has been saved</p>
+                                
+                                    <div class="form-antimation-container">
+                                        <div class="firework" id="firework1">
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div> 
+                                        </div>
+                                        <div class="firework" id="firework2">
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div> 
+                                        </div>
+                                        <div class="firework" id="firework3">
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div>
+                                            <div class="explosion"></div><div class="explosion"></div><div class="explosion"></div> 
+                                        </div>
+                                    </div>
+
+                                    <p id="order-information">We will contact you soon!</p>
+
+                                </div>
+                                <input type="button" value="OK" class="modal-window__button" id="modal-success-button">
+                            </div> 
+                        </div>
+                        
+                        <div class="modal" id="activity-modal">
+                            <div class="modal-window modal-window_type_activity">
+                                <div class="modal-window__content">
+                                    <p>Are you still here?</p>
+                                </div>
+                                <input type="button" value="YES" class="modal-window__button" id="modal-activity-button">
+                            </div>
+                        </div>
+
+                        <div class="animation-preloader">
+                            <div class="animation-main">
+                                <div class="animation-main__item"></div>
+                                <div class="animation-main__item"></div>
+                                <div class="animation-main__item"></div>
+                                <div class="animation-main__item"></div>
+                                <div class="animation-main__percent">100%</div>
+                                <div class="animation-main__text">JS CAMP</div>
+                            </div>
+                        </div>
+
+                    </footer>
+                    
+                </div> 
+            </div>
+        
+            <hr class="line line_position_bottom">
+        </div>
+
+
+        
+    </main>
+
+    
+    <script src="./scripts/bloggerAPI.js"></script>
+    <script src="./scripts/json.js"></script>
+    <script src="./scripts/main.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

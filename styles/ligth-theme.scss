@@ -1,0 +1,91 @@
+$switcher-background: #e6dede;
+$switcher-button-color: rgb(224, 204, 204);
+$switcher-icon-color: rgb(0, 0, 0);
+$menu-item-color: #f9ebd9;
+$menu-item-active-color: #4e5052;
+$logotext-color: #f6edd8;
+$box-joint: 1px 0 3px #000;
+
+.theme-switcher {
+    .theme-switcher__base {
+        background-color: $switcher-background;
+        .theme-switcher__button {
+            background-color: $switcher-button-color;
+            border: 6px solid $switcher-background;
+            .theme-switcher__icon {
+                color: $switcher-icon-color;
+            }
+        }
+    }
+}
+
+#moon {
+    display: none;
+}
+
+.menu__item {
+    color: $menu-item-color;
+    &:hover {
+        color: $menu-item-active-color;
+    }
+}
+
+.header_theme_light{
+    background-image: url(../images/header/header-slider-bg.png);
+    background-size: cover;
+    box-shadow: $box-joint;
+}
+
+.menu__logotext {
+    color: $logotext-color;
+}
+
+body{
+    background: greenyellow;
+}
+.page-block{
+    box-shadow: $box-joint;
+}
+
+.page-block_theme_green{
+    background-image: url(../images/header/header-slider-bg.png);
+    background-size: cover;
+}
+
+.page-block_theme_beige{
+    background-image: url(../images/aboutme/aboutme_bg.png);
+    background-size: cover;
+}
+
+.page-block_theme_orange{
+    background-image: url(../images/profile/profile-bg.png);
+    background-size: cover;
+}
+
+.page-block_theme_lightgrey{
+    background-image: url(../images/myblog/myblog_bg.png);
+    background-size: cover;
+}
+
+.page-block_theme_light-iron{
+    background-image: url(../images/contactme/contactme_bg.png);
+    background-size: cover;
+}
+
+.block-header__name-block_color_white{
+    text-shadow: 3px 3px 0px #393a3a;
+    color: #fcfaf7;
+}
+
+.block-header__separator_color_white{
+    hr{
+        border-top: 4px solid #fcfaf7;
+    }
+    span{
+        color: #fcfaf7;
+    }
+}
+
+.block-header__description_color_white{
+    color: #fcfaf7;
+}

@@ -1,0 +1,82 @@
+.theme-switcher .theme-switcher__base {
+  background-color: #e6dede;
+}
+.theme-switcher .theme-switcher__base .theme-switcher__button {
+  background-color: rgb(224, 204, 204);
+  border: 6px solid #e6dede;
+}
+.theme-switcher .theme-switcher__base .theme-switcher__button .theme-switcher__icon {
+  color: rgb(0, 0, 0);
+}
+
+#moon {
+  display: none;
+}
+
+.menu__item {
+  color: #f9ebd9;
+}
+.menu__item:hover {
+  color: #4e5052;
+}
+
+.header_theme_light {
+  background-image: url(../images/header/header-slider-bg.png);
+  background-size: cover;
+  -webkit-box-shadow: 1px 0 3px #000;
+          box-shadow: 1px 0 3px #000;
+}
+
+.menu__logotext {
+  color: #f6edd8;
+}
+
+body {
+  background: greenyellow;
+}
+
+.page-block {
+  -webkit-box-shadow: 1px 0 3px #000;
+          box-shadow: 1px 0 3px #000;
+}
+
+.page-block_theme_green {
+  background-image: url(../images/header/header-slider-bg.png);
+  background-size: cover;
+}
+
+.page-block_theme_beige {
+  background-image: url(../images/aboutme/aboutme_bg.png);
+  background-size: cover;
+}
+
+.page-block_theme_orange {
+  background-image: url(../images/profile/profile-bg.png);
+  background-size: cover;
+}
+
+.page-block_theme_lightgrey {
+  background-image: url(../images/myblog/myblog_bg.png);
+  background-size: cover;
+}
+
+.page-block_theme_light-iron {
+  background-image: url(../images/contactme/contactme_bg.png);
+  background-size: cover;
+}
+
+.block-header__name-block_color_white {
+  text-shadow: 3px 3px 0px #393a3a;
+  color: #fcfaf7;
+}
+
+.block-header__separator_color_white hr {
+  border-top: 4px solid #fcfaf7;
+}
+.block-header__separator_color_white span {
+  color: #fcfaf7;
+}
+
+.block-header__description_color_white {
+  color: #fcfaf7;
+}
